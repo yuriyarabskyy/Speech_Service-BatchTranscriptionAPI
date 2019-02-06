@@ -29,7 +29,7 @@ def transcribe():
     logging.info("Starting transcription client...")
 
     # configure API key authorization: subscription_key
-    configuration = cris_client.Configuration()
+    configuration = cris_client.Configuration(HOST_NAME, PORT)
     configuration.api_key['Ocp-Apim-Subscription-Key'] = SUBSCRIPTION_KEY
 
     # create the client object and authenticate
@@ -46,20 +46,21 @@ def transcribe():
     # delete all pre-existing completed transcriptions
     # if transcriptions are still running or not started, they will not be deleted
     for transcription in transcriptions:
-        transcription_api.delete_transcription(transcription.id)
+        if transcription.status == "Failed" or transcription.status == "Succeeded":
+            transcription_api.delete_transcription(transcription.id)
 
     logging.info("Creating transcriptions.")
 
     # transcription definition using custom models
-    transcription_definition = cris_client.TranscriptionDefinition(
-        name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI,
-        models=[cris_client.ModelIdentity(ADAPTED_ACOUSTIC_ID), cris_client.ModelIdentity(ADAPTED_LANGUAGE_ID)]
-    )
+    # transcription_definition = cris_client.TranscriptionDefinition(
+    #    name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI,
+    #    models=[cris_client.ModelIdentity(ADAPTED_ACOUSTIC_ID), cris_client.ModelIdentity(ADAPTED_LANGUAGE_ID)]
+    # )
 
     # comment out the previous statement and uncomment the following to use base models for transcription
-    # transcription_definition = cris_client.TranscriptionDefinition(
-    #     name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI
-    # )
+    transcription_definition = cris_client.TranscriptionDefinition(
+        name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI
+    )
 
     data, status, headers = transcription_api.create_transcription_with_http_info(transcription_definition)
 
@@ -78,6 +79,8 @@ def transcribe():
         # get all transcriptions for the user
         transcriptions: List[cris_client.Transcription] = transcription_api.get_transcriptions()
 
+        completed, running, not_started = 0, 0, 0
+
         # for each transcription in the list we check the status
         for transcription in transcriptions:
             if transcription.status == "Failed" or transcription.status == "Succeeded":
@@ -92,10 +95,12 @@ def transcribe():
                     results = requests.get(results_uri)
                     logging.info("Transcription succeeded. Results: ")
                     logging.info(results.content.decode("utf-8"))
-                elif transcription.status == "Running":
-                    running += 1
-                elif transcription.status == "NotStarted":
-                    not_started += 1
+
+            elif transcription.status == "Running":
+                running += 1
+
+            elif transcription.status == "NotStarted":
+                not_started += 1
 
         logging.info(f"Transcriptions status: {completed} completed, {running} running, {not_started} not started yet")
         # wait for 5 seconds

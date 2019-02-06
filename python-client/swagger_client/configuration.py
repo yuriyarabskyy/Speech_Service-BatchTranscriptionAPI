@@ -28,9 +28,9 @@ class TypeWithDefault(type):
         super(TypeWithDefault, cls).__init__(name, bases, dct)
         cls._default = None
 
-    def __call__(cls):
+    def __call__(cls, *args, **kwargs):
         if cls._default is None:
-            cls._default = type.__call__(cls)
+            cls._default = type.__call__(cls, *args, **kwargs)
         return copy.copy(cls._default)
 
     def set_default(cls, default):
@@ -44,10 +44,10 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
     Do not edit the class manually.
     """
 
-    def __init__(self):
+    def __init__(self, hostname, port):
         """Constructor"""
         # Default Base url
-        self.host = "https://develop.cris.ai"
+        self.host = f"https://{hostname}:{port}"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
