@@ -52,15 +52,15 @@ def transcribe():
     logging.info("Creating transcriptions.")
 
     # transcription definition using custom models
-    # transcription_definition = cris_client.TranscriptionDefinition(
-    #    name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI,
-    #    models=[cris_client.ModelIdentity(ADAPTED_ACOUSTIC_ID), cris_client.ModelIdentity(ADAPTED_LANGUAGE_ID)]
-    # )
+    transcription_definition = cris_client.TranscriptionDefinition(
+        name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI,
+        models=[cris_client.ModelIdentity(ADAPTED_ACOUSTIC_ID), cris_client.ModelIdentity(ADAPTED_LANGUAGE_ID)]
+    )
 
     # comment out the previous statement and uncomment the following to use base models for transcription
-    transcription_definition = cris_client.TranscriptionDefinition(
-        name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI
-    )
+    # transcription_definition = cris_client.TranscriptionDefinition(
+    #     name=NAME, description=DESCRIPTION, locale=LOCALE, recordings_url=RECORDINGS_BLOB_URI
+    # )
 
     data, status, headers = transcription_api.create_transcription_with_http_info(transcription_definition)
 
