@@ -1,4 +1,4 @@
-# swagger_client.CustomSpeechDatasetsForModelAdaptationApi
+# cris_client.CustomSpeechDatasetsForModelAdaptationApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -21,18 +21,18 @@ Deletes the specified dataset.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the dataset.
 
 try:
@@ -72,18 +72,18 @@ Gets the dataset identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the dataset.
 
 try:
@@ -124,18 +124,18 @@ Gets a list of datasets for the authenticated subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of datasets for the authenticated subscription.
@@ -172,18 +172,18 @@ Gets a list of supported locales for data imports.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for data imports.
@@ -220,20 +220,20 @@ Updates the mutable details of the dataset identified by its ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the dataset.
-dataset_update = swagger_client.DatasetUpdate() # DatasetUpdate | The updated values for the dataset.
+dataset_update = cris_client.DatasetUpdate() # DatasetUpdate | The updated values for the dataset.
 
 try:
     # Updates the mutable details of the dataset identified by its ID.
@@ -274,18 +274,18 @@ Uploads data and creates a new dataset.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechDatasetsForModelAdaptationApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechDatasetsForModelAdaptationApi(cris_client.ApiClient(configuration))
 name = 'name_example' # str | The name of this data import (always add this string for any import). (optional)
 description = 'description_example' # str | Optional description of this data import. (optional)
 locale = 'locale_example' # str | The locale of this data import (always add this string for any import). (optional)

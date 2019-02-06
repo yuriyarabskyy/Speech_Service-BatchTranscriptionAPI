@@ -1,4 +1,4 @@
-# swagger_client.CustomSpeechEndpointsApi
+# cris_client.CustomSpeechEndpointsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -26,19 +26,19 @@ Creates a new endpoint.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
-endpoint_definition = swagger_client.SpeechEndpointDefinition() # SpeechEndpointDefinition | The details of the endpoint.
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
+endpoint_definition = cris_client.SpeechEndpointDefinition() # SpeechEndpointDefinition | The details of the endpoint.
 
 try:
     # Creates a new endpoint.
@@ -77,20 +77,20 @@ Create a new endpoint data export task.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 endpoint_id = 'endpoint_id_example' # str | The identifier of the endpoint.
-endpoint_data_definition = swagger_client.EndpointDataDefinition() # EndpointDataDefinition | The details of the new endpoint data export.
+endpoint_data_definition = cris_client.EndpointDataDefinition() # EndpointDataDefinition | The details of the new endpoint data export.
 
 try:
     # Create a new endpoint data export task.
@@ -131,18 +131,18 @@ Deletes the endpoint identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the endpoint.
 
 try:
@@ -182,18 +182,18 @@ Deletes the transcriptions and captured audio files associated with the endpoint
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 endpoint_id = 'endpoint_id_example' # str | The identifier of the endpoint.
 
 try:
@@ -233,18 +233,18 @@ Deletes the endpoint data export task identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 endpoint_id = 'endpoint_id_example' # str | The identifier of the endpoint.
 id = 'id_example' # str | The identifier of the endpoint data export.
 
@@ -286,18 +286,18 @@ Gets the endpoint identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the endpoint.
 
 try:
@@ -338,18 +338,18 @@ Gets the specified endpoint data export task for the authenticated user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 endpoint_id = 'endpoint_id_example' # str | The identifier of the endpoint.
 id = 'id_example' # str | The identifier of the data export.
 
@@ -392,18 +392,18 @@ Gets the list of endpoint data export tasks for the authenticated user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 endpoint_id = 'endpoint_id_example' # str | The identifier of the endpoint.
 
 try:
@@ -444,18 +444,18 @@ Gets the list of endpoints for the authenticated subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets the list of endpoints for the authenticated subscription.
@@ -492,18 +492,18 @@ Gets a list of supported locales for endpoint creations.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for endpoint creations.
@@ -540,20 +540,20 @@ Updates the metadata of the endpoint identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechEndpointsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechEndpointsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the endpoint.
-endpoint_update = swagger_client.EndpointUpdate() # EndpointUpdate | The updated values for the endpoint.
+endpoint_update = cris_client.EndpointUpdate() # EndpointUpdate | The updated values for the endpoint.
 
 try:
     # Updates the metadata of the endpoint identified by the given ID.

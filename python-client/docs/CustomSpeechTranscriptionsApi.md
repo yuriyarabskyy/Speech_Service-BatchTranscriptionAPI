@@ -1,4 +1,4 @@
-# swagger_client.CustomSpeechTranscriptionsApi
+# cris_client.CustomSpeechTranscriptionsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -21,19 +21,19 @@ Creates a new transcription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
-transcription = swagger_client.TranscriptionDefinition() # TranscriptionDefinition | The details of the new transcription.
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
+transcription = cris_client.TranscriptionDefinition() # TranscriptionDefinition | The details of the new transcription.
 
 try:
     # Creates a new transcription.
@@ -72,18 +72,18 @@ Deletes the specified transcription task.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the transcription.
 
 try:
@@ -124,18 +124,18 @@ Gets a list of supported locales for offline transcriptions.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for offline transcriptions.
@@ -172,18 +172,18 @@ Gets the transcription identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the transcription.
 
 try:
@@ -224,18 +224,18 @@ Gets a list of transcriptions for the authenticated subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of transcriptions for the authenticated subscription.
@@ -272,20 +272,20 @@ Updates the mutable details of the transcription identified by its ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechTranscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechTranscriptionsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the transcription.
-transcription_update = swagger_client.TranscriptionUpdate() # TranscriptionUpdate | The updated values for the transcription.
+transcription_update = cris_client.TranscriptionUpdate() # TranscriptionUpdate | The updated values for the transcription.
 
 try:
     # Updates the mutable details of the transcription identified by its ID.

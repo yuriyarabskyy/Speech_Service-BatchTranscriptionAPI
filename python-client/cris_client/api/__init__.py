@@ -1,0 +1,18 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from cris_client.api.custom_speech_subscriptions_management_api import CustomSpeechSubscriptionsManagementApi
+from cris_client.api.custom_speech_accuracy_tests_api import CustomSpeechAccuracyTestsApi
+from cris_client.api.custom_speech_datasets_for_model_adaptation_api import CustomSpeechDatasetsForModelAdaptationApi
+from cris_client.api.custom_speech_endpoints_api import CustomSpeechEndpointsApi
+from cris_client.api.custom_speech_models_api import CustomSpeechModelsApi
+from cris_client.api.custom_speech_transcriptions_api import CustomSpeechTranscriptionsApi
+from cris_client.api.language_generation_endpoints_api import LanguageGenerationEndpointsApi
+from cris_client.api.language_generation_models_api import LanguageGenerationModelsApi
+from cris_client.api.service_health_api import ServiceHealthApi
+from cris_client.api.voice_datasets_api import VoiceDatasetsApi
+from cris_client.api.voice_endpoints_api import VoiceEndpointsApi
+from cris_client.api.voice_models_api import VoiceModelsApi
+from cris_client.api.voice_tests_api import VoiceTestsApi

@@ -1,4 +1,4 @@
-# swagger_client.VoiceTestsApi
+# cris_client.VoiceTestsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -18,19 +18,19 @@ Creates a new voice test.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceTestsApi(swagger_client.ApiClient(configuration))
-voice_test_definition = swagger_client.VoiceTestDefinition() # VoiceTestDefinition | 
+api_instance = cris_client.VoiceTestsApi(cris_client.ApiClient(configuration))
+voice_test_definition = cris_client.VoiceTestDefinition() # VoiceTestDefinition | 
 
 try:
     # Creates a new voice test.
@@ -69,18 +69,18 @@ Deletes the specified voice test.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceTestsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice test.
 
 try:
@@ -120,18 +120,18 @@ Gets detail of the specified voice test.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceTestsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice test.
 
 try:

@@ -1,4 +1,4 @@
-# swagger_client.VoiceModelsApi
+# cris_client.VoiceModelsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -21,19 +21,19 @@ Creates a new voice model object.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
-model_definition = swagger_client.ModelDefinition() # ModelDefinition | 
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
+model_definition = cris_client.ModelDefinition() # ModelDefinition | 
 
 try:
     # Creates a new voice model object.
@@ -72,18 +72,18 @@ Deletes the voice model with the given id.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice model
 
 try:
@@ -123,18 +123,18 @@ Gets a list of supported locales for custom voice Models.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for custom voice Models.
@@ -171,18 +171,18 @@ Gets specified voice model details.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | 
 
 try:
@@ -223,18 +223,18 @@ Gets a list of voice model details.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of voice model details.
@@ -271,20 +271,20 @@ Updates the metadata of the voice model identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice model.
-model_update = swagger_client.ModelUpdate() # ModelUpdate | The updated values for the voice model.
+model_update = cris_client.ModelUpdate() # ModelUpdate | The updated values for the voice model.
 
 try:
     # Updates the metadata of the voice model identified by the given ID.

@@ -1,4 +1,4 @@
-# swagger_client.VoiceDatasetsApi
+# cris_client.VoiceDatasetsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -20,18 +20,18 @@ Deletes the voice dataset with the given id.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceDatasetsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceDatasetsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice dataset
 
 try:
@@ -71,18 +71,18 @@ Gets a list of supported locales for custom voice data imports.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceDatasetsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceDatasetsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for custom voice data imports.
@@ -119,18 +119,18 @@ Gets all voice datasets of a user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceDatasetsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceDatasetsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets all voice datasets of a user.
@@ -167,20 +167,20 @@ Updates the mutable details of the voice dataset identified by its ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceDatasetsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceDatasetsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the voice dataset.
-dataset_update = swagger_client.DatasetUpdate() # DatasetUpdate | The updated values for the voice dataset.
+dataset_update = cris_client.DatasetUpdate() # DatasetUpdate | The updated values for the voice dataset.
 
 try:
     # Updates the mutable details of the voice dataset identified by its ID.
@@ -221,18 +221,18 @@ Uploads data and creates a new voice data object.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.VoiceDatasetsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.VoiceDatasetsApi(cris_client.ApiClient(configuration))
 name = 'name_example' # str | The name of this data import (always add this string for any import). (optional)
 description = 'description_example' # str | Optional description of this data import. (optional)
 locale = 'locale_example' # str | The locale of this data import (always add this string for any import). (optional)

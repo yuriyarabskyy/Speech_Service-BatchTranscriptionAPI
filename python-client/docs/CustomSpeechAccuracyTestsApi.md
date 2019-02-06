@@ -1,4 +1,4 @@
-# swagger_client.CustomSpeechAccuracyTestsApi
+# cris_client.CustomSpeechAccuracyTestsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -20,19 +20,19 @@ Creates a new accuracy test.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechAccuracyTestsApi(swagger_client.ApiClient(configuration))
-test_definition = swagger_client.TestDefinition() # TestDefinition | The details of the new accuracy test.
+api_instance = cris_client.CustomSpeechAccuracyTestsApi(cris_client.ApiClient(configuration))
+test_definition = cris_client.TestDefinition() # TestDefinition | The details of the new accuracy test.
 
 try:
     # Creates a new accuracy test.
@@ -71,18 +71,18 @@ Deletes the accuracy test identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechAccuracyTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechAccuracyTestsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the accuracy test.
 
 try:
@@ -122,18 +122,18 @@ Gets the accuracy test identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechAccuracyTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechAccuracyTestsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the accuracy test.
 
 try:
@@ -174,18 +174,18 @@ Gets the list of accuracy tests for the authenticated subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechAccuracyTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechAccuracyTestsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets the list of accuracy tests for the authenticated subscription.
@@ -222,20 +222,20 @@ Updates the mutable details of the test identified by its id.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechAccuracyTestsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechAccuracyTestsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the accuracy test.
-test_update = swagger_client.TestUpdate() # TestUpdate | The object containing the updated fields of the test.
+test_update = cris_client.TestUpdate() # TestUpdate | The object containing the updated fields of the test.
 
 try:
     # Updates the mutable details of the test identified by its id.

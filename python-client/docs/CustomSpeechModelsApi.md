@@ -1,4 +1,4 @@
-# swagger_client.CustomSpeechModelsApi
+# cris_client.CustomSpeechModelsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -21,19 +21,19 @@ Creates a new model.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
-model_definition = swagger_client.SpeechModelDefinition() # SpeechModelDefinition | The details of the new model.
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
+model_definition = cris_client.SpeechModelDefinition() # SpeechModelDefinition | The details of the new model.
 
 try:
     # Creates a new model.
@@ -72,18 +72,18 @@ Deletes the model identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the model.
 
 try:
@@ -123,18 +123,18 @@ Gets the model identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the model.
 
 try:
@@ -175,18 +175,18 @@ Gets the list of models for the authenticated subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets the list of models for the authenticated subscription.
@@ -223,18 +223,18 @@ Gets a list of supported locales for model adaptation.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for model adaptation.
@@ -271,20 +271,20 @@ Updates the metadata of the model identified by the given ID.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CustomSpeechModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.CustomSpeechModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the model.
-model_update = swagger_client.ModelUpdate() # ModelUpdate | The updated values for the model.
+model_update = cris_client.ModelUpdate() # ModelUpdate | The updated values for the model.
 
 try:
     # Updates the metadata of the model identified by the given ID.

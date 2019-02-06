@@ -1,4 +1,4 @@
-# swagger_client.LanguageGenerationModelsApi
+# cris_client.LanguageGenerationModelsApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -21,19 +21,19 @@ Creates a new language generation model.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
-model_definition = swagger_client.ModelDefinition() # ModelDefinition | 
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
+model_definition = cris_client.ModelDefinition() # ModelDefinition | 
 
 try:
     # Creates a new language generation model.
@@ -72,18 +72,18 @@ Deletes the language generation model with the given id.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the language generation model.
 
 try:
@@ -123,18 +123,18 @@ Gets the specified language generation model.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | 
 
 try:
@@ -175,18 +175,18 @@ Gets all language generation model of a subscription.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets all language generation model of a subscription.
@@ -223,18 +223,18 @@ Gets a list of supported locales for language generation model creation.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
 
 try:
     # Gets a list of supported locales for language generation model creation.
@@ -271,20 +271,20 @@ Updates the mutable details of the language generation model identified by its i
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.LanguageGenerationModelsApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.LanguageGenerationModelsApi(cris_client.ApiClient(configuration))
 id = 'id_example' # str | The route parameter identifies the language generation model to change.
-model_update = swagger_client.ModelUpdate() # ModelUpdate | The object contains the updated fields of the model.
+model_update = cris_client.ModelUpdate() # ModelUpdate | The object contains the updated fields of the model.
 
 try:
     # Updates the mutable details of the language generation model identified by its id.

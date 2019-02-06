@@ -1,12 +1,13 @@
-from __future__ import print_function
-from typing import List
-
+# Copyright (c) Microsoft Corporation. All rights reserved.
+#
+# =============================================================================
 import logging
 import sys
 import requests
 import time
-import swagger_client as cris_client
+import cris_client
 
+from typing import List
 
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, format="%(message)s")
 

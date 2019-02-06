@@ -1,4 +1,4 @@
-# swagger_client.ServiceHealthApi
+# cris_client.ServiceHealthApi
 
 All URIs are relative to *https://develop.cris.ai*
 
@@ -16,18 +16,18 @@ The action returns the health of the different components of the serivce.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import cris_client
+from cris_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: subscription_key
-configuration = swagger_client.Configuration()
+configuration = cris_client.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ServiceHealthApi(swagger_client.ApiClient(configuration))
+api_instance = cris_client.ServiceHealthApi(cris_client.ApiClient(configuration))
 
 try:
     # The action returns the health of the different components of the serivce.
