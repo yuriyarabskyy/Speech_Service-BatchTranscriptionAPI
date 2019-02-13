@@ -23,7 +23,7 @@ namespace CrisClient
         private const string Locale = "en-US";
         private const string RecordingsBlobUri = "<URI pointing to an audio file stored Azure blob>";
 
-        // adapted model Ids
+        // adapted model Ids. Note that the lines below if not should should be commented out as the values in the quotes are not valid GUID values
         private static Guid AdaptedAcousticId = new Guid("<id of the custom acoustic model>");
         private static Guid AdaptedLanguageId = new Guid("<ID of the custom language model>");
 
